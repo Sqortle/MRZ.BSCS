@@ -1,16 +1,41 @@
-# This is a sample Python script.
+#!/usr/bin/env python3
+import os
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+os.system("clear")
+os.system("figlet MRZBSCS")
 
+while True:
+    print("""
+    
+    MRZBSCS Aracına Hoş Geldiniz:
+    
+    1) Hızlı Port Tarama (nmap)
+    2) Servis Ve Sistem Bilgisi (nmap)
+    3) İşletim Sistemi Bilgisi (nmap)
+    4) Zafiyet Tarama (nikto)
+    5) Exploit Arama (searchsloit)
+    
+    """)
+    islemno = input("İşlem Numarası Giriniz: ")
+    if islemno == "1":
+        hedef_ip = input("Hedefe IP Giriniz: ")
+        os.system("nmap {}".format(hedef_ip))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    elif islemno == "2":
+        hedef_ip = input("Hedefe IP Giriniz: ")
+        os.system("nmap -sS -sV {}".format(hedef_ip))
 
+    elif islemno == "3":
+        hedef_ip = input("Hedefe IP Giriniz: ")
+        os.system("nmap -O --fuzzy {}".format(hedef_ip))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Selam')
+    elif islemno == "4":
+        hedef_ip = input("Hedefe IP Giriniz: ")
+        os.system("nikto -h {}".format(hedef_ip))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    elif islemno == "5":
+        anahtarkelime = input("Anahtarkelime Giriniz: ")
+        os.system("searchsloit {}".format(anahtarkelime))
+
+    else:
+        print("Hatalı giriş")
