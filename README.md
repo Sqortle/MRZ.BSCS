@@ -33,7 +33,7 @@ sudo apt install nmap nikto exploitdb wafw00f ncrack chkrootkit metasploit-frame
 To start the tool, run:
 
 ```bash
-python3 main.py
+python3 mrzbscs.py
 ```
 
 It will launch an interactive menu with numbered options. You can select tools like `nmap`, `nikto`, `sqlmap`, and `msfvenom` with input prompts. The `exit` option is highlighted in red to terminate the session.
