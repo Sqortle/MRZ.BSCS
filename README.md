@@ -40,4 +40,4 @@ It will launch an interactive menu with numbered options. You can select tools l
 
 ## Disclaimer
 
-This tool is intended for **educational and authorized penetration testing only**. Do **not** use it against systems without explicit permission. Unauthorized use may be **illegal**. The developer takes **no responsibility** for any misuse or consequences.
+This tool is intended for **educational and authorized penetration testing only**. Do **not** use it against systems without explicit permission. Unauthorized use may be **illegal**. The developer takes **no responsibility** for any misuse or consequences. 
